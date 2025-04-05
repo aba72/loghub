@@ -1,0 +1,10 @@
+Analyse du fichier journal `server_log.txt`
+
+Indicateurs de compromission détectés :
+- 3 tentatives échouées de connexion avec des utilisateurs invalides : "admin", "guest"
+- 2 tentatives échouées sur le compte "root" (potentiellement critique)
+- Une connexion acceptée depuis 192.168.1.105 pour l'utilisateur "john"
+- L'adresse IP 192.168.1.110 a été utilisée dans plusieurs tentatives échouées rapprochées dans le temps → suspect
+
+Conclusion :
+Il existe des signes possibles d'une attaque par force brute. Une surveillance accrue est recommandée.
